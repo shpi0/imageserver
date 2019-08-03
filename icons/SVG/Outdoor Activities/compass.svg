@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>compass</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outdoor-Activities-(142)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-15" fill="#D8D8D8" cx="32" cy="32" r="29"></circle>
+        <circle id="Oval-15-Copy" fill="#80D25B" cx="32" cy="32" r="24"></circle>
+        <polygon id="Triangle-2" fill="#FFFFFF" transform="translate(39.071068, 24.928932) rotate(-315.000000) translate(-39.071068, -24.928932) " points="39.0710678 14.9289322 43.0710678 34.9289322 35.0710678 34.9289322"></polygon>
+        <polygon id="Triangle-2-Copy" fill="#E43535" transform="translate(24.928932, 39.071068) scale(1, -1) rotate(315.000000) translate(-24.928932, -39.071068) " points="24.9289322 29.0710678 28.9289322 49.0710678 20.9289322 49.0710678"></polygon>
+        <path d="M32,7 L32,6 M41.563062,8.90132435 L41.9537931,7.98081949 M49.6776695,14.3223305 L50.3847763,13.6152237 M55.0953362,22.4288758 L56.02252,22.0542692 M57,32 L58,32 M55.0986757,41.563062 L56.0191805,41.9537931 M49.6776695,49.6776695 L50.3847763,50.3847763 M41.5711242,55.0953362 L41.9457308,56.02252 M32,57 L32,58 M22.436938,55.0986757 L22.0462069,56.0191805 M14.3223305,49.6776695 L13.6152237,50.3847763 M8.90132435,41.563062 L7.98081949,41.9537931 M7,32 L6,32 M8.90132435,22.436938 L7.98081949,22.0462069 M14.3223305,14.3223305 L13.6152237,13.6152237 M22.4288758,8.90466385 L22.0542692,7.97747999" id="Line" stroke="#979797" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M32,6 L32,10 M58,32 L54,32 M32,58 L32,54 M6,32 L10,32" id="Line" stroke="#979797" stroke-width="2" stroke-linecap="square"></path>
+    </g>
+</svg>

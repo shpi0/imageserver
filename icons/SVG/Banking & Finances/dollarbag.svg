@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#22BA8E" d="M31.1146858,5.17562453 L27,4 L34,18 L41,4 L36.8853142,5.17562453 C36.5271315,3.91960941 35.3709589,3 34,3 C32.6290411,3 31.4728685,3.91960941 31.1146858,5.17562453 Z"/>
+    <path fill="#22BA8E" d="M34,60 C46.1502645,60 56,53.6875678 56,41.6585366 C56,29.6295053 46.1502645,13 34,13 C21.8497355,13 12,29.6295053 12,41.6585366 C12,53.6875678 21.8497355,60 34,60 Z"/>
+    <text fill="#FFDD95" font-family="MarkerFelt-Thin, Marker Felt" font-size="40" font-weight="300">
+      <tspan x="23" y="51">$</tspan>
+    </text>
+    <rect width="12" height="4" x="28" y="11" fill="#80D25B" rx="2"/>
+  </g>
+</svg>

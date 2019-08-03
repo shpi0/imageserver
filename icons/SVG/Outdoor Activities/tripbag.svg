@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>tripbag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outdoor-Activities-(142)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,28 L49,28 L49,57.9997876 C49,60.2090439 47.2147544,62 45.0098214,62 L16.9901786,62 C14.7864638,62 13,60.2079681 13,57.9997876 L13,28 Z" id="Rectangle-93" fill="#22BA8E"></path>
+        <path d="M37,11 C37,7.6862915 34.3137085,5 31,5 C27.6862915,5 25,7.6862915 25,11" id="Oval-47" stroke="#22BA8E" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M23,51.9947828 C23,49.2362404 25.2415785,47 27.9966858,47 L34.0033142,47 C36.7629076,47 39,49.2456516 39,51.9947828 L39,62 L23,62 L23,51.9947828 Z" id="Rectangle-95" fill="#80D25B"></path>
+        <rect id="Rectangle-97" fill="#80D25B" x="49" y="41" width="6" height="14" rx="3"></rect>
+        <rect id="Rectangle-97-Copy" fill="#80D25B" x="7" y="41" width="6" height="14" rx="3"></rect>
+        <rect id="Rectangle-94" fill="#80D25B" x="9" y="11" width="44" height="17" rx="4"></rect>
+        <rect id="Rectangle-96" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" x="21" y="24" width="6" height="8"></rect>
+        <rect id="Rectangle-96-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" x="35" y="24" width="6" height="8"></rect>
+    </g>
+</svg>

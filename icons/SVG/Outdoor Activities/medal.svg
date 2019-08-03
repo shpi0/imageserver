@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>medal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outdoor-Activities-(142)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-109" fill="#595959" x="32" y="33" width="2" height="7"></rect>
+        <circle id="Oval-60" fill="#FCC24C" cx="33" cy="50" r="11"></circle>
+        <circle id="Oval-60-Copy" fill="#FFDD95" cx="33" cy="50" r="7"></circle>
+        <polygon id="Rectangle-110" fill="#BD7575" points="7 3 15 3 37 33 29 33"></polygon>
+        <polygon id="Rectangle-110-Copy" fill="#BD7575" transform="translate(44.000000, 18.000000) scale(-1, 1) translate(-44.000000, -18.000000) " points="29 3 37 3 59 33 51 33"></polygon>
+    </g>
+</svg>

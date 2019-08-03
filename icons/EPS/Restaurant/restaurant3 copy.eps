@@ -1,0 +1,1355 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 10.13.3 (Build 17D102) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 64 64
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 64 64
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+/Cs1 SC
+q
+0 0 64 64 rc
+40 0 0 55 12 2 cm
+BI
+/Width 120
+/Height 165
+/BitsPerComponent 8
+/Decode[
+0 1
+0 1
+0 1
+]
+/DataSource cg_aiproc
+ID
+`;b>Yg]$99rnX(CfS]XUH2Ys"rPhn9_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5),or5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'kX_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+``E&^BDp8(rn*,-h4+E)XoJ"I`W+3_J+D4jhOOPe
+@f4):r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9M><#9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`-`a9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+b$tA,SH&03cMuDo
+J,\]GrQ/FE_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_GX)*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r&V\gr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/+a^>&3][Zu7s*sb(rR-#i_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G"&/_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'km_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+dX(rejkBaks*t%Iii)go;>e:)
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`//49`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*7`%js_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/+`)6NnW;lnsi;_a8J,\2gr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_Hoq6_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r'nOsr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G's`QJhf's*t%+V#8)'r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)l9r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r(4b!r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`EtGj8\9A
+J,\Q9r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_IQ@<_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l$_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'sjZf_;Os*sUlrPMA-
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G"S>_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.]'9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`;k's74h,s69Q5rR65n_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mEB2&6?9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r(k1'r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+dsgQ]li2J*fDNKZr5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)-Ar5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.f*9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/-o%37.m/MS6ds_/2
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2bB9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rR65^s6fo:
+p#>nd9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+D#D.Dr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.o-9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G("&ipZp9s*t%3]DTN>r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5*;Er5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r)LU-r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`F7fn,MkVJ,\5ir5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_JN!E_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*<PhH-_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rnNk/s6ou;rQoW`_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mED+slE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'l-_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+cu\[UnGe":rPVV3_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'lF_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l0_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+`Dcg:rUU!Ys*sn8r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G"nG_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l0_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G("+nac_Ms*t"Cr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G"nG_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l0_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G(".q==RSs*t!b:]/('r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5*;Er5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r)LU-r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`;k)n,MkVJ,RAgr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_JN!E_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*<PhH-_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rPht.s6ou;rQ/IF_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mED+slE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l-_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+a^FT;n,In9cZ/m"
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2bE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.o-9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pS
+EUWqrs*t%*TDZQ"r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5*;Er5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r)LU-r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`EqAn,MhUJ+(b^_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9PjXD9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'l-
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/-n'LP'mf.e9qu+K5r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)-Dr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r)LU-r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pI<<)spn,MbSJ,RlHr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_J2dB_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r)1C*r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pXJ*d4%s*t%/Yl)@3r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5*2Br5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`.f*9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,jKS"Nli2J1li"^rr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)-Ar5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.f*9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rPMD1q<RDIl2Q83e:IP79`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b?9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*:Vog'_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pXJa*3us*sCTr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G"S>_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`.]'9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$s6Rbis60K4rqlZ7=T$$0r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$B)KM>r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*:Vog'_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+a&rB@qs".Cs*t%(S,C,sr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)u<r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*9YsL$_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,h4*R,jo9i&h>G,`r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)-;r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9_u7ko8c9*BKbW_3p0*pjZ>B^4#Z7o39jU,ltAQRO$icR9)QP"r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*9YsL$_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/-o\J[0j8XW-cZ&g!9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b99`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9_FrGl<$+.
+2`9YR2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>Ss]=??,G7f:+sr5)/*_G'mE9`2b$r5)/*_G'mE
+9`.K!9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'pSE9$uYs*t%1[J[m8r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)l9r5)/*_G'mE9`2b$r5)/*_G'g<9C?a_j>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPmVkAd]1`(=9`2b$r5)/*_G'mE9`2b$r(4b!r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`F1^
+j8\-=J,Ag8`)6HL9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9ORe89`2b$r5)/*_G'mE9_P,Kk=@Sn2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<RLip7OnQ_G'mE9`2b$r5)/*_G'l!_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rPVS5qsreIi;\<+fS]UD9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b69`2b$r5)/)
+]h@d75NF^[j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>Jm`F$KQ89DlY#r5)/*_G'ks_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rn*+ds53j+n'CpK9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$?2VQ5qn5Yd:-%Am2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XSm3W$K_r5)/*
+_G'ks_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$s6n:ls5*d*rVaiFr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*>f'2&F$J_C2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPmW1Vj_G'mE9`.As9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rQ/FHs8CmUh>`!(i2$:f
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9_P,`7cZHb
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGQ2>3\4r5)/*6c)Op_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'seUtu(+s*se*r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$qR]D`82sf62)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgX83$IX9Dh/o
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+s7b[3s4[L&rR-#i_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+mVkAN2)XGP=>f.s2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)Xf@55[[_9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`<CcgAfn,J,\]Hr5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'Wn7cZEaj>AgU2-;`s2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)Y%lSOWOo9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'sn^=rV?s*t"BrP_e7_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'5s
+3oi.Uj>AgU2)SIr2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XYa=??As9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+`Dus:ptGc"s*t%&Pl/Blr5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9_u7kj>SsW2)XGP2<6VPj>Bppj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j?5FZqRB/q_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`Ee2
+fDjG%J+D:j_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/!N^Mkb2<6VPj>AgU
+2)XGP2,rWo2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGX2)Xuc6i=epr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/-o%DXpeGk$sb\-jj9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5).oBKbE62<6VPj>AgU2)XGP2<6Vm2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGU2)X`64oE/jr5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rQJp(s4%'uroC6[_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$l<$+.2)XGP2<6VPj>AgU2)XGP;DmMm2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU3]/e[=??As9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`F+UeGn"tJ,/L1_b^3I9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$k=R_p2)XGP2<6VP
+j>AgU2)XGP2,WEl2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU3]/eX8iZac9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'pG:]L7XeGmqrJ,RoMr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'&Q2WQ_Qj>AgU2)XGP2<6VPj>AgU2,?*j2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6\R2<?nXr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rRHPJs3UdqmE#4B9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$jZGH^2)XGP2<6VPj>AgU2)XGP2<6VP:?48ij>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2`3JS
+4?!,S9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G(!saO1%7s*t%GrPr.?
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G',b392qSj>AgU2)XGP2<6VPj>AgU2)S.i2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6\R2<RRkr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`<"9
+s8MrDs3CXorna4D_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'5s3oi.Uj>AgU2)XGP2<6VP
+j>AgU2)XGP9Jtlg2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6SO2<n:)r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`En>cMu/hJ+_at_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'<04leIXj>AgU
+2)XGP2<6VPj>AgU2)XGP2,!!f2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6SO2=,!>r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`OeDcMu)fJ,R`8r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$o8Z3!
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2+][d2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU0f:i[O$ii^9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$rQoW/s3(Flro^cg_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/(
+\4Yg@2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP8N#Qd2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGL2`:HA9)QP"r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,kI8Y7b5Ztgo^n>=ltAQI=?>V;39<4[jZ>B`8iZ*<3p^NCo8c98
+\4Z\99`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$l<$+.2)XGP2<6VPj>AgU2)XGP2<6VPj>Aecj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPl7lC%r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'pH;ZH[ebQ#Z`J*qc7j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2`9l&3q]%5r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$opnS52)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2+BIa2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPoe)h*r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G's^NQD.@s*sjfbN(N<j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2=>EIqR]Du_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$mVkAN2)XGP2<6VPj>AgU2)XGP2<6VPj>BCaj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)Xf@55[%M9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/-nBo>Wa8^Ygrod'Nj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPk=@T+TLSjr9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+qR]D`83#Zf2<6VPj>AgU2)XGP2<6VPj>Ae`j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgX83$IX9DgEZ9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$rQ8ULs8L+>`W(GYS=JXt2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6YQmW1Vi]hA:?9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9_P,K
+j>JmV2)XGP2<6VPj>AgU2)XGP2<6V^2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGQ2>3\4r5)/*/&G!X_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'sfVoA\TrrDurjaT0Hj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XSm
+3W$K_r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).qF$J_C2<6VP
+j>AgU2)XGP2<6VPj>AgU2)RVZ2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2=>NMr5)/*_G'kX_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pG:&k"P
+`W*gTJ*^rdj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=>NMr5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/)]h@Qa3TN%Tj>AgU2)XGP2<6VP
+j>AgU2*a%[2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XSm3W$K_
+r5)/*_G'kU_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pWI)>p#s*saQ\`>V*j>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGQ2>3\4r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/)]h@d75NF^[j>AgU2)XGP2<6VPj>B1[j>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6YQmW1Vi]hA:?9`2b$r5)/*.)J[U_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,lG:@;_>f#[puXk.j>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<RLiqR]Du_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9_P,Kk=@Sn2)XGP2<6VPj>AeZj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XPf3;0"7r5)/*_G'mE9`2b$r5)/*.)J[U_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$rPhn<rV=>1^]/fQM2C:N2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)Xf@55`8kr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'g<9C?a_j>AgU2)XGP2<6VX2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=>EI
+qR]Du_G'mE9`2b$r5)/*_G'mE9`-3R9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'saQG<I7
+s*smrf&S\Gj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPopnSM_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/#SOVmH3oi4W
+j>B(Xj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2`9l&3q]%5r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r$B3Rr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`O_=^]1tHJ*C$9j>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPl<$+F_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9_u7ko8Z3)BKA<A=?>V;39<4[jZ>B`8iZ*<
+3p^NCo8Z37\4Z\99`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r$'!Or5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'pQC:sSZs*s[<VW9Tlj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6\RqRB/q_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5(Kgr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`-*O9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,jKQ;s]`3K[mHs!q3TN%T
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=lhqr5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2ag9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'kO_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`;k)s8)2ss1//Zm<3[62)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>Ag]BKc:19`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE2ba.d9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r#`dLr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+eqUa8\c70R_o(Om
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XZ$3rHigr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2ad9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*+2U_L_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G(!sb.7P^s*stEk=A/)2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPk=R`3_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_Fulc_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`-!L9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`<%<s8W&.s0hrWnW]:!2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPjZ>Bu_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE1edha9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`,mI9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`EqB[f<f9J,A*Zj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<?qYr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_DFsa_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'kI_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G("&ijSlns*s?EA)oL)j>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgX8iZac9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5(0^r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r#*@Fr5)/*_G'mE9`2b$r5)/*_G'mE9`<=\Zi@B3J+^(O
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XZ$3rHigr5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_D+a^
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*)8])F_G'mE9`2b$r5)/*
+_G'mE9`2b$rogr"s0M`Trq,jE4[%j`2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=,!>
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE0hhM^9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'kF_G'mE9`2b$r5)/*_G'mE9`2b$rP__8r:[JsYlB4AJUul>2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2=lkrr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2a[9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'kC_G'mE9`2b$r5)/*_G'mE9`2b$rn3@:s02NQq9I:H2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2`:HA9)QP"r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE/kl2[9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*(;`cC_G'mE9`2b$r5)/*_G'mE9`OY4YlCj*J*9^*
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<n:)r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_CJ=X
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`,R@9`2b$r5)/*_G'mE9`2b$rQ8ZQ
+s/l<Nnt)H62)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPoq"YN_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE.nolX9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r"Hq@r5)/*_G'mE9`2b$
+r5)/,ii0'[XoEnKkih+e2rlhRj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPmVkAf_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2aX9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*'>dH@_G'mE
+9`2b$r5)/+_bU7,lE1)ds*sBRDr`c5j>AgU2)XGP2<6VPj>AgU2)XGP2<RLiqR]Du_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5'jUr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*&Ah-=
+_G'mE9`2b$r5)/+e:4LuWrISB]=[,]2<6VPj>AgU2)XGP2<6VPj>AgU2Dt3$7f:+sr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2aU9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r"-_=
+r5)/*_G'mE9`2b$rp.J%s/H$Jq>'/?6f^*^j>AgU2)XGP2<6VPj>Ag_F$KT>9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$-iChTr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r"-_=
+r5)/*_G'mE9`<"6s8Mkps/5mHn;N=e2)XGP2<6VPj>AgU2)XSm3W$K_r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE,u"6R9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'k:_G'mE
+9`2b$r5)/,h3k2@VuM8Cg"GFD2<6VPj>AgU2DsoD5Pr,er5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2aR9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`,@:9`2b$r5)/*
+_G("%h5C:Ks*s9:>3%Ouk=@T+TLSjr9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5'XOr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`,779`2b$r5)/+c>BBWV#Pr:
+WN#<)55Mlar5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2aO
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'k7_G'mE9`2b$roLJ^s.fUDq!n=$;>e:)r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$+oK2Nr5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'k7_G'mE9`;n,s82>^s.TIBrRZl'_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE+&)UL9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r!1)4r5)/+f8-.#T`9N0c2>FPr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5),Kr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'k4_G'mE9`OP*
+U&UbbJ,T>f?i7c7r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r#NXJr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*#Js15a^>)JrLs7_s*t%+UAVl%r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5'FIr5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*"N!k3i1chCSc=35jnuthr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5),Hr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*"N!k4p>qnG
+S,\!:d<PT+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2aF9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`5">Gan`&s*t%4]_oW?r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5'=Fr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+rW28rS,\rWJ,T-?`DlcP9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`)RtpSLIOMF-]I53Pj(jZGHb;*"#\54XRt
+pSLIX^J"LA9Gm]E9`2b$r5)/*_G'mE9`2b$r5)/+`Dlj<rV)f]R/_[8g62BN9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/)
+_+X<O6010cj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgV4#QP]62SJ69DlY#r5)/*_G'mE9`2b$r5)/,
+g62K(s-Nb8n^dWT9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$pod6Q=$#D"2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<e1'(&4t'r5)/*_G'mE9`2b$r5)/-n^d`.s-<V6rQAgN_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).uLI1)a2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XJW%lNp56N"\or5)/*_G'pOB)Vats-<V6ro:*X
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$nqTQm2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP%lNE*
+2=cMhr5)/*_G'shXSr0es-3P5q<e-u:]/('r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$pod6M4#Q(V2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VP%cfK)jZ>?pY=SW0:]L7XrVr;cP5g%1e:IP79`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'jC9BfM=j>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6V$2<6VPkuTqEe:@DqRK&ELJ*b2Q
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).tKL+ZV
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2$i8#
+2<6VPqq/d^s-`nLs*t%FrPr+>_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`)RtjZ>?\2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)P[#2)XPc7K<8^qYuu`O8j_/h4+>Z9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$pSLIA2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6Us2=QWdp]$Z]NrOV$hu(>br5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).uMF-A]2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AdrqqBcus-`nGs*ajlEW![Ir5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$m;5&J2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<nOUo`(?ZN;n>*k-b-(
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9^#>6j>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)Y$-XRuO\s,6o)
+qt0j*;>e:)r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9]\>oj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgV4$3H4o(;sM
+s,$c"rn*/,_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).k;*!\p2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=>j>nc,$W
+M#VYechtXRr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9^Q[\j>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgiaiX)QRK&'B
+FoM?]@Jmu9r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'NX6KC!]j>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<[_-s8N#fs-`nAs)J%s
+V>S2(r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'^$8)uNbj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2=d0'mf/^TL&Z,dkl&Cnr5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'jA9BA5mj>AgU2)XGP2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XJR2Z2[umf/^TKE#`cdX(i.9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).tKL+ZV2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VP
+j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPlY1)!s-`n>s(hVu^\krBr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'jC9BfM=j>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XGP2<6VPj>Agg\$t]'RK%m=CAmr+``E#S9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/&Y=Rb:2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XM^62pZS
+li3CQJcB?^rnE\8_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5).uLI1&Z
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>Ag`L5+plRK%j<B)ho%g&/]\r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$nqTQn4#Q(V2<6VPj>AgU2)XGP
+2<6VPj>AgU2)XGP2<6VPj>AgU2)XGP2>YhPkl7(NJcG]K?iA2_r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/&Y=RnZ3oi.Uj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgU
+2)XVu<TX7Ks+14Ks'PcdY5H.1r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/)_+X<O6010cj>AgU2)XGP2<6VPj>AgU2)XGP2<6VPj>AgeVPN>RRK%j<r;U+"n,:."r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`)RtpSLIOMF-]I
+53Pj(jZ>Ba;*"#\54XRtpo$gbq=!GFRK%j<qYs^seV*k;9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pYK]<$"s+14G
+s&e[0r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$s6[nes-`n<s7u[srqu`9>l;H4r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+aB\cEr8RaE
+s+14Es&8pRT)?H!r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/,hO`X)RK%j<pA\%`iV^Pdr5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/-p#4g.RK%j<o`%Ya
+cu]-%9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'pTF56e`s+14Bs%WLU\GX3;r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`F4bh#EfBJcG?A9`4S^`Dc]O9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rP__8r:SkFRK%j<
+nc),Yfo>pH9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$rn3:as-`n<s7$%XnC%6O9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$s7"Iis-`n<s6fnQrQ8XJ_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/+b%'$&RK%j<mf,TPiMZUj9`2b$r5)/*_G'mE
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'sfVq1m9s+14;s$6AErPMA-
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`;k's7km1s-`n<
+s6K\HrR6/l_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`<Ff
+e,Pj9JcG'949"N]r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'so_:/FPs+148s#U/UrPht;_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/+``W9?qU>J4s+146s#'f2Qi+]or5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*
+_G'mE9`Eh6d/TO6JcFp52"TK"_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/-o@qXlRK%j<jo7"4c"m6o9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rQT-&
+s-`n<s5j86roLE__G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`F.Yc2X43JcFg2
+0)G,:`)-BK9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'pH;#gC^c2X43JcFa0.K.hPr5)/*
+_G'mE9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rRQ_Gs-`n<s5Eu+m`YOF9`2b$r5)/*_G'mE9`2b$
+r5)/*_G'mE9`2b$r5)/*_G(!tbKBjQs+14.s!RdDaBne]9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$
+rQ&=Fs8C+?RK%j<hu=r#hk9na9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$rnjBhs-`n<s5*c"p>l.g
+9`2b$r5)/*_G'mE9`2b$r5)/*_G'mE9`2b$s7YNos-`n<s4mVprQo]b_G'mE9`2b$r5)/*_G'mE9`2b$
+r5)/+cum;,RK%j<h#ADokdp]/9`2b$r5)/*_G'mE9`2b$r5)/*_G'sm]#=W:s+14)ruCt1rP_b6_G'mE
+9`2b$r5)/*_G'mE9`;q0s8;T/s-`n<s4RDgrn3A1_G'mE9`2b$r5)/*_G'mE9`E_+_>fr'JcFC&(@foP
+_G'mE9`2b$r5)/*_G'mE9`OY4_>fr'JcF=$&cKmbr5)/*_G'mE9`2b$rQAfes-`n<s472^ro0sU_G'mE
+9`2b$r5)/,ii9`mRK%j<ec-3Vm/=gsr5)/*_G'pG:B1.V^AjW$JcF4!$iSS)r5)/*_G'pXJ%P`Ks+14!
+rsShl`;IJGr5)/,lbpF8RK%j<df0[Rqu+Q<rPr(@rqj>-RK%j<d/O:Kh3n8uRCN9bs+13rrrhuNs7G0X
+s-`n;
+~> %APLeod
+EI
+8 w
+1 J
+0.60000002 i
+0.92941177 0.56862748 0.06666667 sc
+1 0 0 -1 14 58 cm
+35.355339 7.3223305 m
+30.831228 2.7982204 24.581228 0 17.67767 0 c
+10.77411 0 4.5241103 2.7982204 0 7.3223305 c
+S
+2 w
+1 0 0 -1 25.079403 49.013527 cm
+4.8288436 0 m
+4.8288436 0 6.4774055 3.6387527 0 5.0892243 c
+S
+1 0 0 -1 29.547274 31.038748 cm
+0 1.6330863 m
+0 1.6330863 2.7403812 -1.5189518 5.760488 0.93512678 c
+S
+1 0 0 -1 28.056322 23.035812 cm
+0.64248878 0 m
+0.64248878 0 -0.8985163 5.950067 0.79260427 6.9107285 c
+S
+1 0 0 -1 38.570065 48.631359 cm
+0 0.00008390 m
+0 0.00008390 4.6814365 -0.04905184 5.497786 2.2309237 c
+S
+1 0 0 -1 19.69227 47.117764 cm
+2.0370052 0.25614914 m
+2.0370052 0.25614914 0.25070834 -1.1931616 0 2.8030827 c
+S
+ep
+end
+%%Trailer
+%%EOF

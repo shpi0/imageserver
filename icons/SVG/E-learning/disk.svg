@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <path id="disk-a" d="M29,58 C12.9837423,58 0,45.0162577 0,29 C0,12.9837423 12.9837423,0 29,0 C45.0162577,0 58,12.9837423 58,29 C58,45.0162577 45.0162577,58 29,58 Z M29,40 C35.0751322,40 40,35.0751322 40,29 C40,22.9248678 35.0751322,18 29,18 C22.9248678,18 18,22.9248678 18,29 C18,35.0751322 22.9248678,40 29,40 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(3 3)">
+      <mask id="disk-b" fill="#fff">
+        <use xlink:href="#disk-a"/>
+      </mask>
+      <use fill="#D8D8D8" xlink:href="#disk-a"/>
+      <polygon fill="#22BA8E" points="65.647 26.945 32.563 26.945 21.601 -1.672 65.647 2.515" mask="url(#disk-b)"/>
+      <polygon fill="#4796E7" points="34.925 -5.664 28.609 28.278 59.152 59.947 -15.033 61.028 -.679 -5.29" mask="url(#disk-b)"/>
+    </g>
+    <circle cx="32" cy="32" r="8" fill="#ECECEC"/>
+  </g>
+</svg>
